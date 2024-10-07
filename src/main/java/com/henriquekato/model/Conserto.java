@@ -25,7 +25,7 @@ public class Conserto {
     public Conserto(ConsertoDTO conserto) {
         dataEntrada = conserto.dataEntrada();
         dataSaida = conserto.dataSaida();
-        veiculo = conserto.veiculo();
-        mecanico = conserto.mecanico();
+        veiculo = new Veiculo(conserto.veiculo());
+        mecanico = new Mecanico(conserto.mecanico());
     }
 }

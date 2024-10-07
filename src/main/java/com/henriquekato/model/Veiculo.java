@@ -12,4 +12,10 @@ public class Veiculo {
     private String marca;
     private String modelo;
     private int ano;
+
+    public Veiculo(VeiculoDTO veiculoDTO){
+        marca = veiculoDTO.marca();
+        modelo = veiculoDTO.modelo();
+        ano = veiculoDTO.ano();
+    }
 }

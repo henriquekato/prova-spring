@@ -11,4 +11,9 @@ import lombok.*;
 public class Mecanico {
     private String nome;
     private int anosExperiencia;
+
+    public Mecanico(MecanicoDTO mecanicoDTO){
+        nome = mecanicoDTO.nome();
+        anosExperiencia = mecanicoDTO.anosExperiencia();
+    }
 }
