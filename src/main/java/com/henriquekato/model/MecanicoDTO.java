@@ -1,4 +1,9 @@
 package com.henriquekato.model;
 
-public record MecanicoDTO(String nome, int anosExperiencia) {
-}
+import jakarta.validation.constraints.NotBlank;
+
+public record MecanicoDTO(
+        @NotBlank
+        String nome,
+        int anosExperiencia
+) { }

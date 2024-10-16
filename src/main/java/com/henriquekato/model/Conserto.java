@@ -3,8 +3,6 @@ package com.henriquekato.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDate;
-
 @Entity
 @Getter
 @Setter
@@ -15,8 +13,8 @@ public class Conserto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private LocalDate dataEntrada;
-    private LocalDate dataSaida;
+    private String dataEntrada;
+    private String dataSaida;
     @Embedded
     private Veiculo veiculo;
     @Embedded

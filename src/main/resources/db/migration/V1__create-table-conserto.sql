@@ -4,7 +4,7 @@ create table conserto (
     data_saida varchar not null,
     marca varchar not null,
     modelo varchar not null,
-    ano int not null,
+    ano varchar not null,
     nome varchar not null,
     anos_experiencia int not null
 )
