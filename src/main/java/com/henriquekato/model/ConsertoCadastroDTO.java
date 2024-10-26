@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 
-public record ConsertoDTO(
+public record ConsertoCadastroDTO(
         @NotBlank
         @Pattern(regexp = "^(\\d{2}/){2}(\\d){4}$")
         String dataEntrada,

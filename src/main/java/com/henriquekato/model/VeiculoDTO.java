@@ -9,8 +9,11 @@ public record VeiculoDTO(
         String marca,
         @NotBlank
         String modelo,
-        @NotNull
-        @Pattern(regexp = "^(\\d){4}$")
+        @NotNull @Pattern(regexp = "^(\\d){4}$")
         String ano,
         String cor
-) { }
+) {
+    public VeiculoDTO(Veiculo veiculo) {
+        this(veiculo.getMarca(), veiculo.getModelo(), veiculo.getAno(), veiculo.getCor());
+    }
+}
