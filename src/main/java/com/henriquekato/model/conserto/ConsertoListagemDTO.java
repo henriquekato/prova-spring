@@ -1,4 +1,4 @@
-package com.henriquekato.model;
+package com.henriquekato.model.conserto;
 
 public record ConsertoListagemDTO(
         long id,

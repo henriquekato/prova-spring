@@ -1,4 +1,4 @@
-package com.henriquekato.model;
+package com.henriquekato.model.conserto;
 
 import jakarta.validation.constraints.Pattern;
 

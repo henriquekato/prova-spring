@@ -1,6 +1,6 @@
 package com.henriquekato.controllers;
 
-import com.henriquekato.model.*;
+import com.henriquekato.model.conserto.*;
 import com.henriquekato.persistence.ConsertoRepository;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
